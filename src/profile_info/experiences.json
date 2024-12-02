@@ -1,0 +1,29 @@
+{
+  "experiences": [
+    {
+      "title": "Project Assistant",
+      "company": "Pune Knowledge Cluster",
+      "duration": "October 2025 – February 2025",
+      "description": "Led project development for Central Government problem statement, improving data accessibility for social healthcare workers with advanced information retrieval techniques."
+    },
+
+    {
+      "title": "Software Engineering Intern",
+      "company": "D&T, General Mills India",
+      "duration": "June 2024 – August 2024",
+      "description": "Worked on Data Engineering team, developing File Data Ingestion project using BigQuery, establishing file management procedures, and implementing data quality checks with DBT and Airflow."
+    },
+    {
+      "title": "Backend Engineering Intern",
+      "company": "Cosyugma Info LLP",
+      "duration": "March 2024 – April 2024",
+      "description": "Architected backend solutions, developed APIs, performed unit testing, and set up CI/CD pipelines with Redis caching."
+    },
+    {
+      "title": "Research Associate",
+      "company": "Pune Knowledge Cluster",
+      "duration": "November 2023 – February 2024",
+      "description": "Led project development for Central Government problem statement, improving data accessibility for social healthcare workers with advanced information retrieval techniques."
+    }
+  ]
+}

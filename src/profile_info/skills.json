@@ -1,0 +1,9 @@
+{
+  "skills": {
+    "languages": ["Python", "Java", "C++", "Dart", "Rust"],
+    "tools": ["Jenkins", "SonarQube", "Docker", "Postman", "GitHub"],
+    "databases": ["PostgreSQL", "MySQL", "SQLite", "MongoDB"],
+    "frameworks": ["Django", "ElasticSearch", "Flutter", "Celery"],
+    "platforms": ["AWS", "GCP", "Linux"]
+  }
+}

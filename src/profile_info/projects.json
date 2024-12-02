@@ -1,0 +1,14 @@
+{
+  "projects": [
+    {
+      "name": "Credenz Reverse Coding Round 1",
+      "description": "Led team to develop a gamified Quiz platform for annual Tech fest 'Credenz', handling 2000+ student participation.",
+      "technologies": ["Python", "Django", "Docker"]
+    },
+    {
+      "name": "Credenz Main App",
+      "description": "Developed REST API backend and Flutter app for event management, achieving 100+ Play Store downloads.",
+      "technologies": ["Django", "Flutter"]
+    }
+  ]
+}

@@ -11,6 +11,7 @@ import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
 
 export default defineConfig({
+  base: "/profile-website/",
   plugins: [react()],
   resolve: {
     alias: {
@@ -18,3 +19,8 @@ export default defineConfig({
     },
   },
 });
+
+// export default defineConfig({
+//   plugins: [react()],
+//   base: "/profile-website/",
+// });

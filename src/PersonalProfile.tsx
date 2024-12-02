@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   GitHubLogoIcon,
@@ -10,54 +10,16 @@ import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { ModeToggle } from "./components/theme-toggle";
 import omkarPhoto from "./assets/omkar_photo.png";
+import _skills from "./profile_info/skills.json";
+import _experiences from "./profile_info/experiences.json";
+import _projects from "./profile_info/projects.json";
+import _education from "./profile_info/education.json";
 
 const PersonalProfile = () => {
-  const skills = {
-    languages: ["Python", "Java", "C++", "Dart", "Rust"],
-    tools: ["Jenkins", "SonarQube", "Docker", "Postman", "GitHub"],
-    databases: ["PostgreSQL", "MySQL", "SQLite", "MongoDB"],
-    frameworks: ["Django", "ElasticSearch", "Flutter", "Celery"],
-    platforms: ["AWS", "GCP", "Linux"],
-  };
-
-  const experiences = [
-    {
-      title: "Software Engineering Intern",
-      company: "D&T, General Mills India",
-      duration: "June 2024 – August 2024",
-      description:
-        "Worked on Data Engineering team, developing File Data Ingestion project using BigQuery, establishing file management procedures, and implementing data quality checks with DBT and Airflow.",
-    },
-    {
-      title: "Backend Engineering Intern",
-      company: "Cosyugma Info LLP",
-      duration: "March 2024 – April 2024",
-      description:
-        "Architected backend solutions, developed APIs, performed unit testing, and set up CI/CD pipelines with Redis caching.",
-    },
-    {
-      title: "Research Associate",
-      company: "Pune Knowledge Cluster",
-      duration: "November 2023 – February 2024",
-      description:
-        "Led project development for Central Government problem statement, improving data accessibility for social healthcare workers with advanced information retrieval techniques.",
-    },
-  ];
-
-  const projects = [
-    {
-      name: "Credenz Reverse Coding Round 1",
-      description:
-        "Led team to develop a gamified Quiz platform for annual Tech fest 'Credenz', handling 2000+ student participation.",
-      technologies: ["Python", "Django", "Docker"],
-    },
-    {
-      name: "Credenz Main App",
-      description:
-        "Developed REST API backend and Flutter app for event management, achieving 100+ Play Store downloads.",
-      technologies: ["Django", "Flutter"],
-    },
-  ];
+  const skills = _skills.skills;
+  const experiences = _experiences.experiences;
+  const projects = _projects.projects;
+  const education = _education.education;
 
   return (
     <div className="flex justify-center items-center min-h-screen bg-background text-foreground p-4 dark:bg-background dark:text-foreground">
@@ -154,65 +116,78 @@ const PersonalProfile = () => {
                   </section>
 
                   <section className="mb-4">
-                    <h2 className="text-xl font-semibold mb-2">Experience</h2>
-                    {experiences.map((exp) => (
-                      <Card key={exp.title} className="mb-2">
-                        <CardHeader className="pb-2">
-                          <CardTitle className="text-lg">{exp.title}</CardTitle>
-                          <p className="text-sm text-muted-foreground">
-                            {exp.company}
-                          </p>
-                          <p className="text-xs text-muted-foreground">
-                            {exp.duration}
-                          </p>
-                        </CardHeader>
-                        <CardContent>
-                          <p className="text-sm">{exp.description}</p>
-                        </CardContent>
-                      </Card>
-                    ))}
+                    <h2 className="text-xl font-semibold mb-4">Experience</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      {experiences.map((exp) => (
+                        <Card key={exp.title} className="mb-2">
+                          <CardHeader className="pb-2">
+                            <CardTitle className="text-lg">
+                              {exp.title}
+                            </CardTitle>
+                            <p className="text-sm text-muted-foreground">
+                              {exp.company}
+                            </p>
+                            <p className="text-xs text-muted-foreground">
+                              {exp.duration}
+                            </p>
+                          </CardHeader>
+                          <CardContent>
+                            <p className="text-sm">{exp.description}</p>
+                          </CardContent>
+                        </Card>
+                      ))}
+                    </div>
                   </section>
 
                   <section>
-                    <h2 className="text-xl font-semibold mb-2">Projects</h2>
-                    {projects.map((project) => (
-                      <Card key={project.name} className="mb-2">
-                        <CardHeader className="pb-2">
-                          <CardTitle className="text-lg">
-                            {project.name}
-                          </CardTitle>
-                        </CardHeader>
-                        <CardContent>
-                          <p className="text-sm text-muted-foreground mb-2">
-                            {project.description}
-                          </p>
-                          <div className="flex flex-wrap gap-1">
-                            {project.technologies.map((tech) => (
-                              <Badge key={tech} variant="outline">
-                                {tech}
-                              </Badge>
-                            ))}
-                          </div>
-                        </CardContent>
-                      </Card>
-                    ))}
+                    <h2 className="text-xl font-semibold mb-4">Projects</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      {projects.map((project) => (
+                        <Card key={project.name} className="mb-2">
+                          <CardHeader className="pb-2">
+                            <CardTitle className="text-lg">
+                              {project.name}
+                            </CardTitle>
+                          </CardHeader>
+                          <CardContent>
+                            <p className="text-sm text-muted-foreground mb-2">
+                              {project.description}
+                            </p>
+                            <div className="flex flex-wrap gap-1">
+                              {project.technologies.map((tech) => (
+                                <Badge key={tech} variant="outline">
+                                  {tech}
+                                </Badge>
+                              ))}
+                            </div>
+                          </CardContent>
+                        </Card>
+                      ))}
+                    </div>
                   </section>
 
-                  <section className="mt-4">
-                    <h2 className="text-xl font-semibold mb-2">Education</h2>
-                    <Card>
-                      <CardHeader>
-                        <CardTitle className="text-lg">
-                          Pune Institute of Computer Technology
-                        </CardTitle>
-                        <p className="text-sm text-muted-foreground">
-                          Bachelor of Engineering - Computer Engineering
-                        </p>
-                        <p className="text-xs text-muted-foreground">
-                          July 2021 - July 2025 | CGPA: 8.8
-                        </p>
-                      </CardHeader>
-                    </Card>
+                  <br />
+                  <section>
+                    <h2 className="text-xl font-semibold mb-4">Education</h2>
+                    <div className="grid grid-cols-1 gap-4">
+                      {education.map((item) => (
+                        <Card key={item.institution} className="mb-2">
+                          <CardHeader className="pb-2">
+                            <CardTitle className="text-lg">
+                              {item.institution}
+                            </CardTitle>
+                          </CardHeader>
+                          <CardContent>
+                            <p className="text-sm text-muted-foreground mb-2">
+                              {item.degree}
+                            </p>
+                            <p className="text-xs text-muted-foreground">
+                              {item.duration} | {item.cgpa}
+                            </p>
+                          </CardContent>
+                        </Card>
+                      ))}
+                    </div>
                   </section>
                 </CardContent>
               </Card>
