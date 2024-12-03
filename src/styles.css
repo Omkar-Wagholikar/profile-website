@@ -1,0 +1,50 @@
+/* General Styles */
+.app-container {
+  background-color: var(--background);
+  color: var(--foreground);
+  min-height: 100vh;
+ /*  position: relative; */
+}
+
+/* Tabs Container */
+.tabs-container {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 50;
+}
+
+/* Tabs List */
+.tabs-list {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 9999px;
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.tabs-list:hover {
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Tabs Trigger */
+.tabs-trigger {
+  padding: 0.25rem 1rem;
+  border-radius: 9999px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tabs-trigger:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.tabs-trigger[data-state="active"] {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}

@@ -223,13 +223,18 @@ const Terminal: React.FC = () => {
               hover:bg-green-600 transition-colors
             "
           />
-        </div>
-        <div className="text-sm text-gray-700">Omkar's Terminal</div>
-        <div className="flex space-x-2">
+        
+</div>
+        
+	<div className="text-sm text-gray-700 flex space-x-2">Omkar's Terminal</div>
+         <div className="flex space-x-2">
+	{/*
           <Minus className="w-4 h-4 text-gray-600 cursor-pointer" />
           <Plus className="w-4 h-4 text-gray-600 cursor-pointer" />
           <X className="w-4 h-4 text-gray-600 cursor-pointer" />
+	*/}
         </div>
+	
       </div>
 
       <CardContent className="p-0 h-[calc(100%-2.5rem)]">
