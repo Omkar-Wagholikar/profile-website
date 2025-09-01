@@ -9,6 +9,22 @@
       "name": "Credenz Main App",
       "description": "Developed REST API backend and Flutter app for event management, achieving 100+ Play Store downloads.",
       "technologies": ["Django", "Flutter"]
+    },    
+    {
+      "name": "Bloom rs",
+      "description": "High Concurrency Bloom Filter implementations in rust.",
+      "technologies": ["Bloom filters","Concurrency","Rust"]
+    },
+    {
+      "name": "myDB",
+      "description": "Writing a SQL Database from scratch",
+      "technologies":["B+ trees", "SQLite", "Rust"]
+    },
+    {
+      "name":"EduNexus",
+      "description":"",
+      "technologies":["Django","Python"]
     }
+
   ]
 }
