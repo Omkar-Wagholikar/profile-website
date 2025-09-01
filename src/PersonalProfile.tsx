@@ -28,15 +28,17 @@ const PersonalProfile = () => {
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 p-4 transition-all duration-500">
       <div className="max-w-6xl mx-auto">
         {/* Hero Section */}
-        <Card className="mb-8 border-0 shadow-2xl bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-1">
-          <CardHeader className="relative overflow-hidden">
+        <Card className="mb-8 border-0 shadow-2xl bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-1 overflow-hidden">
+          <CardHeader className="relative overflow-hidden rounded-b-2xl pb-8">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-purple-600/10 dark:from-blue-400/10 dark:to-purple-400/10"></div>
             <div className="relative flex flex-col md:flex-row items-center justify-between gap-6">
               <div className="flex items-center gap-6">
                 <div className="relative">
                   <Avatar className="w-32 h-32 ring-4 ring-blue-100 dark:ring-blue-900 shadow-xl">
                     <AvatarImage src={omkarPhoto} alt="Omkar Wagholikar" />
-                    <AvatarFallback className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 text-white">OW</AvatarFallback>
+                    <AvatarFallback className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 text-white">
+                      OW
+                    </AvatarFallback>
                   </Avatar>
                   <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-green-500 rounded-full border-4 border-white dark:border-slate-800 animate-pulse"></div>
                 </div>
@@ -75,7 +77,9 @@ const PersonalProfile = () => {
               <ModeToggle />
             </div>
           </CardHeader>
-          <CardContent>
+
+          {/* Notice the extra margin added here */}
+          <CardContent className="mt-6">
             <div className="flex items-start gap-4">
               <User className="w-6 h-6 text-blue-500 mt-1 flex-shrink-0" />
               <div>
