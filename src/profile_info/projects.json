@@ -3,26 +3,31 @@
     {
       "name": "Credenz Reverse Coding Round 1",
       "description": "Led team to develop a gamified Quiz platform for annual Tech fest 'Credenz', handling 2000+ student participation.",
+      "link":"http:/github.com/Omkar-Wagholikar/",
       "technologies": ["Python", "Django", "Docker"]
     },
     {
       "name": "Credenz Main App",
       "description": "Developed REST API backend and Flutter app for event management, achieving 100+ Play Store downloads.",
+      "link":"http:/github.com/Omkar-Wagholikar/",
       "technologies": ["Django", "Flutter"]
     },    
     {
       "name": "Bloom rs",
       "description": "High Concurrency Bloom Filter implementations in rust.",
+      "link":"http:/github.com/Omkar-Wagholikar/",
       "technologies": ["Bloom filters","Concurrency","Rust"]
     },
     {
       "name": "myDB",
       "description": "Writing a SQL Database from scratch",
+      "link":"http:/github.com/Omkar-Wagholikar/",
       "technologies":["B+ trees", "SQLite", "Rust"]
     },
     {
       "name":"EduNexus",
       "description":"",
+      "link":"http:/github.com/Omkar-Wagholikar/",
       "technologies":["Django","Python"]
     }
 

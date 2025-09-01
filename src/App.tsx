@@ -51,7 +51,7 @@ function App() {
   const [activeView, setActiveView] = useState("profile");
 
   return (
-    <ThemeProvider defaultTheme="light">
+    <ThemeProvider defaultTheme="dark">
       <div className="min-h-screen transition-all duration-500">
         {/* Enhanced Navigation */}
         <div className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50">

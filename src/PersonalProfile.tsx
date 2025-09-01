@@ -188,7 +188,9 @@ const PersonalProfile = () => {
                         <CardTitle className="text-lg text-purple-600 dark:text-purple-400">
                           {project.name}
                         </CardTitle>
-                        <ExternalLink className="w-4 h-4 text-slate-400 hover:text-slate-600 cursor-pointer transition-colors" />
+                        <a href={project.link}>
+                          <ExternalLink className="w-4 h-4 text-slate-400 hover:text-slate-600 cursor-pointer transition-colors" />
+                        </a>
                       </div>
                     </CardHeader>
                     <CardContent>
