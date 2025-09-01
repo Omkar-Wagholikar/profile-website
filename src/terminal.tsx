@@ -1,7 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
-import { X, Minus, Plus } from "lucide-react";
 
 import _skills from "./profile_info/skills.json";
 import _experiences from "./profile_info/experiences.json";
@@ -110,7 +109,7 @@ skills       resume      contact.txt
   },
 };
 
-const Terminal: React.FC = () => {
+const TerminalPage: React.FC = () => {
   const [input, setInput] = useState<string>("");
   const [history, setHistory] = useState<string[]>([
     "Welcome to Omkar's Terminal",
@@ -272,4 +271,4 @@ const Terminal: React.FC = () => {
   );
 };
 
-export default Terminal;
+export default TerminalPage;
